@@ -29,12 +29,20 @@ header {
 .nav-left {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-left-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .nav-left-foot {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin-bottom: 50px;
 }
 
 .recently-played {
@@ -94,6 +102,7 @@ footer {
   width: 100%;
   margin-bottom: 5px;
   background-color: black;
+  color: white;
 }
 
 /* ----- @media  */
