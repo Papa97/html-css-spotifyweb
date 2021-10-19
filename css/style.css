@@ -8,6 +8,8 @@ body {
   position: relative;
 }
 
+/* ----header  */
+
 header {
   font-size: 24px;
   padding: 5px 25px;
@@ -22,6 +24,33 @@ header {
   display: flex;
 }
 
+/* ----- main  */
+
+.nav-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-left-foot {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.recently-played {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 70px;
+}
+
+/* ---- footer  */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+}
 /* ----- DEBUG  */
 
 .debug header {
@@ -39,4 +68,37 @@ header {
   height: 100vh;
   width: calc(100% - 50px);
   background-color: yellow;
+}
+
+.debug footer {
+  width: 100%;
+  background-color: skyblue;
+}
+
+.debug .recently-played div {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  margin: 10px 20px;
+}
+
+.debug .nav-left-top div {
+  height: 30px;
+  width: 100%;
+  margin-bottom: 5px;
+  background-color: black;
+}
+
+.debug .nav-left-foot div {
+  height: 30px;
+  width: 100%;
+  margin-bottom: 5px;
+  background-color: black;
+}
+
+/* ----- @media  */
+@media screen and (max-width: 568px) {
+  .playlist {
+    display: none;
+  }
 }
