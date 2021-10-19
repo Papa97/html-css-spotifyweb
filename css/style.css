@@ -57,7 +57,57 @@ header div {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-top: 15px;
 }
+
+.nav-cont {
+  display: flex;
+  margin: 10px;
+}
+
+.nav-logo {
+  font-size: 18px;
+}
+
+.text-nav {
+  display: none;
+  padding-left: 10px;
+  align-self: center;
+}
+
+#spotify-txt {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.text-nav {
+  color: white;
+}
+
+.grey {
+  color: grey;
+}
+
+#install-app .nav-logo {
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 0 5px;
+}
+
+#name-cont .nav-logo {
+  border-radius: 50%;
+  background-color: grey;
+  padding: 0 3px;
+}
+
+#install-app,
+#install-app i {
+  font-size: 10px;
+}
+
+/* #name {
+  font-we: 600;
+} */
 
 .nav-left-foot {
   display: flex;
@@ -96,6 +146,20 @@ header div {
 .playlist {
   display: none;
   color: white;
+}
+
+.cont-playlist {
+  display: flex;
+}
+
+.cont-playlist i {
+  filter: invert();
+}
+
+.cont-playlist div:first-of-type {
+  font-size: 20px;
+  padding: 5px 8px;
+  background-color: grey;
 }
 
 /* ---- footer  */
@@ -142,7 +206,7 @@ footer {
   height: 30px;
   width: 100%;
   margin-bottom: 5px;
-  background-color: white;
+  /* background-color: white; */
 }
 
 .debug .nav-left-foot div {
@@ -167,11 +231,57 @@ footer {
   border: 1px solid; */
   /* margin: 5px 0; */
 }
+
+.debug .nav-cont div {
+  /* border: 1px solid; */
+  /* width: 50%; */
+  /* height: 100%; */
+}
+
+.nav-left-foot {
+  color: white;
+}
+
 /* ----- @media  */
 
 @media screen and (min-width: 400px) {
+  header {
+    width: calc(100% - 200px);
+  }
+
+  .nav-left {
+    width: 330px;
+  }
+
   .playlist {
     display: block;
-    background-color: red;
+  }
+
+  .playlist div {
+    margin-left: 5px;
+    margin-bottom: 10px;
+  }
+
+  #nome-play {
+    font-size: 14px;
+  }
+  #playlist-txt {
+    margin-top: 15px;
+    margin-left: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .text-nav {
+    display: block;
+  }
+  #spotify {
+    font-size: 44px;
+    color: white;
+  }
+
+  #install-app {
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
   }
 }

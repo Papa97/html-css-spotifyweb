@@ -12,8 +12,15 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body class="debug">
+  <body class="">
     <header>
       <div>Effettua l'upgrade</div>
     </header>
@@ -21,15 +28,56 @@
       <div class="container-flex">
         <div class="nav-left">
           <div class="nav-left-top">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div class="playlist">doijufhsd</div>
+            <!-- Spotify  -->
+            <div class="nav-cont">
+              <div class="nav-logo" id="spotify">
+                <i class="fab fa-spotify"></i>
+              </div>
+              <div class="text-nav" id="spotify-txt">Spotify</div>
+            </div>
+            <!-- home  -->
+            <div class="nav-cont">
+              <div class="nav-logo grey"><i class="fas fa-home"></i></div>
+              <div class="text-nav grey">Home</div>
+            </div>
+            <!-- search -->
+            <div class="nav-cont">
+              <div class="nav-logo grey"><i class="fas fa-search"></i></div>
+              <div class="text-nav grey">Cerca</div>
+            </div>
+            <!-- library -->
+            <div class="nav-cont">
+              <div class="nav-logo grey">||\</div>
+              <div class="text-nav grey">La tua libreria</div>
+            </div>
+
+            <!-- playlist  -->
+            <div class="playlist">
+              <div id="playlist-txt">playlist</div>
+              <div class="cont-playlist">
+                <div><i class="fas fa-plus"></i></div>
+                <div class="grey grey">Crea Playlist</div>
+              </div>
+              <div id="nome-play grey">
+                <div class="grey">Nome Playlist</div>
+                <div class="grey">Nome Playlist</div>
+                <div class="grey">Nome Playlist</div>
+                <div class="grey">Nome Playlist</div>
+                <div class="grey">Nome Playlist</div>
+                <div class="grey">Nome Playlist</div>
+                <div class="grey">Nome Playlist</div>
+              </div>
+            </div>
           </div>
           <div class="nav-left-foot">
-            <div>1</div>
-            <div>2</div>
+            <div class="nav-cont" id="install-app">
+              <div class="nav-logo"><i class="fas fa-arrow-down"></i></div>
+              <div class="text-nav">Installa app</div>
+            </div>
+            <div class="nav-cont" id="name-cont">
+              <div class="nav-logo"><i class="far fa-user"></i></div>
+              <div class="text-nav" id="name">John Doe</div>
+            </div>
           </div>
         </div>
         <div class="main-content">
@@ -48,13 +96,13 @@
             <div></div>
             <div></div>
             <div></div>
-            <!-- <div></div>
             <div></div>
             <div></div>
             <div></div>
             <div></div>
             <div></div>
-            <div></div> -->
+            <div></div>
+            <div></div>
           </div>
         </div>
       </div>
