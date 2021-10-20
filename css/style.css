@@ -18,6 +18,7 @@ header {
   width: calc(100% - 35px);
   padding: 15px 0;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 header {
@@ -80,6 +81,10 @@ header div {
   font-weight: 600;
 }
 
+#nome-play {
+  overflow-y: scroll;
+}
+
 .text-nav {
   color: white;
 }
@@ -105,6 +110,9 @@ header div {
   font-size: 10px;
 }
 
+#reg {
+  font-size: 13px;
+}
 /* #name {
   font-we: 600;
 } */
@@ -139,9 +147,11 @@ header div {
   color: gray;
 }
 
-.recently-played {
+.album {
   display: flex;
   flex-wrap: wrap;
+  margin: 5px 15px;
+  align-items: flex-start;
 }
 .playlist {
   display: none;
@@ -160,6 +170,13 @@ header div {
   font-size: 20px;
   padding: 5px 8px;
   background-color: grey;
+}
+
+.album-title {
+  font-weight: 800;
+  font-size: 24px;
+  color: white;
+  margin: 20px;
 }
 
 /* ---- footer  */
@@ -213,7 +230,7 @@ footer {
   height: 30px;
   width: 100%;
   margin-bottom: 5px;
-  background-color: white;
+  /* background-color: white; */
   color: white;
 }
 
@@ -244,7 +261,7 @@ footer {
 
 /* ----- @media  */
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 420px) {
   header {
     width: calc(100% - 200px);
   }
@@ -284,4 +301,49 @@ footer {
     padding-bottom: 5px;
     border-bottom: 1px solid white;
   }
+}
+
+.cont-album img {
+  width: 100px;
+  margin: 0 10px;
+}
+
+.cont-album {
+  max-width: 100px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.song-title {
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.subtitle {
+  color: grey;
+  font-size: 11px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+#lana {
+  background-image: url(../img/youg.jpeg);
+}
+
+#einaudi {
+  background-image: url(../img/einaudi.jpeg);
+}
+
+#einaudi,
+#lana {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  border-radius: 50%;
 }
