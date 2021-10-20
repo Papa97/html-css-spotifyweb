@@ -34,7 +34,6 @@ header div {
   background-color: transparent;
   color: white;
   text-align: right;
-  display: inline-block;
   float: right;
   text-transform: uppercase;
 }
@@ -52,6 +51,7 @@ header div {
   height: calc(100vh - 50px);
   width: 35px;
   background-color: black;
+  overflow: auto;
 }
 
 .nav-left-top {
@@ -81,9 +81,9 @@ header div {
   font-weight: 600;
 }
 
-#nome-play {
-  overflow-y: scroll;
-}
+/* .nome-play {
+  overflow-y: auto;
+} */
 
 .text-nav {
   color: white;
@@ -124,7 +124,7 @@ header div {
 }
 
 .main-content {
-  overflow-y: scroll;
+  overflow-y: auto;
   margin-bottom: 50px;
   height: calc(100vh - 50px);
   width: calc(100% - 50px);
@@ -281,6 +281,8 @@ footer {
 
   #nome-play {
     font-size: 14px;
+    overflow: auto;
+    height: 150px;
   }
   #playlist-txt {
     margin-top: 15px;
