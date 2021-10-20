@@ -63,7 +63,7 @@ header div {
 
 .nav-cont {
   display: flex;
-  margin: 10px;
+  padding: 10px;
 }
 
 .nav-logo {
@@ -74,6 +74,10 @@ header div {
   display: none;
   padding-left: 10px;
   align-self: center;
+}
+
+#spotify i {
+  color: whitesmoke;
 }
 
 #spotify-txt {
@@ -136,6 +140,7 @@ header div {
   flex-wrap: wrap;
   margin-top: 70px;
   justify-content: center;
+  padding: 5px;
 }
 
 .nav-main div {
@@ -179,6 +184,54 @@ header div {
   margin: 20px;
 }
 
+.cont-album img {
+  width: 100px;
+  margin: 0 10px;
+}
+
+.cont-album {
+  max-width: 100px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.song-title {
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.subtitle {
+  color: grey;
+  font-size: 11px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+#lana {
+  background-image: url(../img/youg.jpeg);
+}
+
+#einaudi {
+  background-image: url(../img/einaudi.jpeg);
+}
+
+#einaudi,
+#lana {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.active-bt {
+  border-bottom: 2px solid yellowgreen;
+}
 /* ---- footer  */
 
 footer {
@@ -241,19 +294,19 @@ footer {
   border: 1px solid;
 }
 
-.debug .nav-main div {
-  /* width: 90px; */
-  /* height: 40px; */
-  /* background-color: purple;
-  border: 1px solid; */
-  /* margin: 5px 0; */
+/* .debug .nav-main div {
+  width: 90px;
+  height: 40px;
+  background-color: purple;
+  border: 1px solid; 
+  margin: 5px 0; 
 }
 
 .debug .nav-cont div {
-  /* border: 1px solid; */
-  /* width: 50%; */
-  /* height: 100%; */
-}
+  border: 1px solid;
+  width: 50%;
+  height: 100%;
+} */
 
 .nav-left-foot {
   color: white;
@@ -303,49 +356,8 @@ footer {
     padding-bottom: 5px;
     border-bottom: 1px solid white;
   }
-}
 
-.cont-album img {
-  width: 100px;
-  margin: 0 10px;
-}
-
-.cont-album {
-  max-width: 100px;
-  display: flex;
-  flex-direction: column;
-  color: white;
-  align-items: center;
-  margin: 0 10px;
-}
-
-.song-title {
-  color: white;
-  font-weight: 600;
-  font-size: 13px;
-  text-align: center;
-  margin-top: 10px;
-}
-
-.subtitle {
-  color: grey;
-  font-size: 11px;
-  margin-top: 5px;
-  text-align: center;
-}
-
-#lana {
-  background-image: url(../img/youg.jpeg);
-}
-
-#einaudi {
-  background-image: url(../img/einaudi.jpeg);
-}
-
-#einaudi,
-#lana {
-  width: 100px;
-  height: 100px;
-  background-size: cover;
-  border-radius: 50%;
+  .active-left {
+    border-left: 3px solid yellowgreen;
+  }
 }
