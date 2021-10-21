@@ -39,26 +39,24 @@
             </div>
             <!-- home  -->
             <div class="nav-cont active-left">
-              <div class="nav-logo grey"><i class="fas fa-home"></i></div>
-              <div class="text-nav grey">Home</div>
+              <div class="nav-logo grey"><i class="fas fa-home"></i> Home</div>
             </div>
             <!-- search -->
             <div class="nav-cont">
-              <div class="nav-logo grey"><i class="fas fa-search"></i></div>
-              <div class="text-nav grey">Cerca</div>
+              <div class="nav-logo grey">
+                <i class="fas fa-search"></i> Cerca
+              </div>
             </div>
             <!-- library -->
             <div class="nav-cont">
-              <div class="nav-logo grey">||\</div>
-              <div class="text-nav grey">La tua libreria</div>
+              <div class="nav-logo grey">||\ La tua libreria</div>
             </div>
 
             <!-- playlist  -->
             <div class="playlist">
               <div id="playlist-txt">playlist</div>
               <div class="cont-playlist">
-                <div><i class="fas fa-plus"></i></div>
-                <div class="grey grey">Crea Playlist</div>
+                <i class="fas fa-plus"></i> <span> Crea Playlist</span>
               </div>
               <div id="nome-play" class="grey">
                 <div class="grey">Nome Playlist</div>
@@ -155,7 +153,7 @@
         </div>
       </div>
     </main>
-    <footer class="debug">
+    <footer>
       <div class="foot-left">
         <div><img src="img/sinister.jpeg" alt="sinister" /></div>
         <div id="song-left-foot">
@@ -177,7 +175,11 @@
         </div>
         <div id="barra-canzone">
           <div>0:25</div>
-          <div class="barra"></div>
+          <div class="barra-colorata">
+            <div id="barra-tempo-sx"></div>
+            <div class="cerchio"></div>
+            <div id="barra-tempo-dx"></div>
+          </div>
           <div>4:25</div>
         </div>
       </div>
@@ -185,7 +187,11 @@
         <div><i class="fas fa-list"></i></div>
         <div><i class="fas fa-desktop"></i></div>
         <div><i class="fas fa-volume-up"></i></div>
-        <div class="barra"></div>
+        <div class="barra-colorata">
+          <div id="barra-vol-sx"></div>
+          <div class="cerchio"></div>
+          <div id="barra-vol-dx"></div>
+        </div>
       </div>
     </footer>
   </body>

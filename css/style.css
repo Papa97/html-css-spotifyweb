@@ -14,9 +14,9 @@ body {
 header {
   position: fixed;
   top: 0px;
-  right: 0;
+  right: 0px;
   width: calc(100% - 35px);
-  padding: 15px 0;
+  padding: 15px 10px;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
@@ -166,17 +166,23 @@ header div {
 
 .cont-playlist {
   display: flex;
+  align-items: center;
 }
 
 .cont-playlist i {
-  filter: invert();
-}
-
-.cont-playlist div:first-of-type {
+  filter: invert(1);
   font-size: 20px;
   padding: 5px 8px;
   background-color: grey;
 }
+
+.cont-playlist span {
+  padding-left: 10px;
+  color: grey;
+}
+
+/* .cont-playlist div:first-of-type {
+} */
 
 .album-title {
   font-weight: 800;
@@ -339,9 +345,94 @@ footer {
 .foot-right {
   width: calc(100% / 3);
 }
+
+#barra-vol-sx {
+  width: 10px;
+  height: 2px;
+  background-color: white;
+  margin: 0;
+}
+
+#barra-vol-dx {
+  width: 40px;
+  height: 2px;
+  background-color: grey;
+  margin: 0;
+}
+
+.barra-colorata {
+  display: flex;
+  align-items: center;
+}
+
+.cerchio {
+  height: 10px;
+  width: 10px;
+  border: 1px;
+  border-radius: 50%;
+  background-color: white;
+  display: none;
+  margin: 0;
+}
+
+#barra-tempo-sx {
+  width: 20px;
+  height: 2px;
+  background-color: white;
+}
+
+#barra-tempo-dx {
+  width: 80px;
+  height: 2px;
+  background-color: grey;
+}
+
+.barra-colorata div {
+  margin: 0;
+}
+
+#barra-canzone .barra-colorata div {
+  margin: 0;
+}
 /* ---hovers  */
 .cont-album img:hover {
   filter: brightness(0.5);
+}
+
+.nav-main div:hover {
+  color: white;
+}
+
+.nav-left :hover {
+  color: white;
+}
+
+.cont-playlist i:hover {
+  color: white;
+}
+
+.foot-left .container-flex i:hover {
+  color: white;
+}
+
+#song-left-foot div:last-of-type:hover {
+  color: white;
+}
+
+#tasti i:hover {
+  transform: scale(1.2);
+}
+
+header div:hover {
+  transform: scale(1.1);
+}
+#install-app .text-nav:hover {
+  transform: scale(1.2);
+}
+
+.cont-playlist :hover {
+  color: white;
+  background-color: black;
 }
 
 /* ----- DEBUG  */
@@ -503,6 +594,17 @@ footer {
     border: 1px solid;
     width: 100px;
   }
+  #barra-vol-sx {
+    width: 15px;
+    height: 2px;
+    background-color: white;
+  }
+
+  #barra-vol-dx {
+    width: 60px;
+    height: 2px;
+    background-color: grey;
+  }
 }
 
 @media screen and (min-width: 620px) {
@@ -549,6 +651,18 @@ footer {
   .foot-right div {
     margin: 5px;
     font-size: 12px;
+  }
+
+  #barra-vol-sx {
+    width: 20px;
+    height: 2px;
+    background-color: white;
+  }
+
+  #barra-vol-dx {
+    width: 90px;
+    height: 2px;
+    background-color: grey;
   }
 }
 
