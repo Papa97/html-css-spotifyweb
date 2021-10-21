@@ -153,6 +153,10 @@ header div {
   color: gray;
 }
 
+.nav-cont span {
+  display: none;
+}
+
 .album {
   display: flex;
   flex-wrap: wrap;
@@ -180,9 +184,6 @@ header div {
   padding-left: 10px;
   color: grey;
 }
-
-/* .cont-playlist div:first-of-type {
-} */
 
 .album-title {
   font-weight: 800;
@@ -336,8 +337,12 @@ footer {
 }
 
 .foot-right div {
-  margin: 2px;
+  /* margin: 2px; */
   font-size: 10px;
+}
+
+.margin {
+  margin: 0 2px;
 }
 
 .foot-left,
@@ -435,6 +440,10 @@ header div:hover {
   background-color: black;
 }
 
+.barra-colorata:hover .cerchio {
+  display: block;
+}
+
 /* ----- DEBUG  */
 
 /* .debug header {
@@ -507,6 +516,10 @@ header div:hover {
 
   .nav-left {
     width: 330px;
+  }
+
+  .nav-cont span {
+    display: inline;
   }
 
   .playlist {
@@ -649,8 +662,11 @@ header div:hover {
   }
 
   .foot-right div {
-    margin: 5px;
     font-size: 12px;
+  }
+
+  .margin {
+    margin: 0 5px;
   }
 
   #barra-vol-sx {
@@ -708,8 +724,12 @@ header div:hover {
   }
 
   .foot-right div {
-    margin: 5px;
+    /* margin: 5px; */
     font-size: 14px;
+  }
+
+  .margin {
+    margin: 0 8px;
   }
 
   .foot-right .barra {
